@@ -1,0 +1,15 @@
+les differentes commandes a éxécuté pour les tests:
+
+- "pytest ." : lance un test sur tout
+- "pytest -s ." : lance les tests avec description 'setup_method'
+- "pytest . -m nameOfMark" : n'execute que le test qui est marque par le tag: @pytest.mark.nameOfMark
+- "pytest . -m "not nameOfMark"" execute tous les tests qui ne sont par tagger avec nameOfMark
+- "" :
+- "" :
+- "" :
+- "" :
+
+
+Bonnes pratiques :
+- une definition de tests par UseCase
+- plusieurs test dans chaque def de UseCase
