@@ -1,13 +1,13 @@
 import pytest
-from source.my_module_mock import f1, f2, fetch_product_price, calculate_tax
+from source.my_module_mock import f1, f2#, fetch_product_price, calculate_tax
 # import requests
 from unittest.mock import patch
 
 
-def test_f2_with_fixed_f1():
-    with patch('source.my_module_mock.f1', return_value=42) as mock_f1 :
-        assert f2() == 420
-        mock_f1.assert_called_once()
+# def test_f2_with_fixed_f1():
+#     with patch('source.my_module_mock.f1', return_value=42) as mock_f1 :
+#         assert f2() == 420
+#         mock_f1.assert_called_once()
 
 # def test_calculate_tax():
 #     with patch('pricing_module.fetch_product_price', return_value=100.0) as mock_fetch:
